@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Signature</title>
+    <style media="screen">
+      .main{
+        text-align: center;
+      }
+      .btn{
+        text-decoration: none;
+        background: #258de0;
+        color: #ffffff;
+        padding: 7.5px 12px;
+        font-size: 14px;
+        text-shadow: 0 -1px 0 rgba(84, 110, 122, 0.2);
+        margin-left: 5px;
+        cursor: pointer;
+        display: inline-block;
+        border-radius: 7px;
+        transition: 0.3s;
+        border: 0;
+      }
+      #signature_canvas{
+        border: 1px solid #000
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <canvas  id="signature_canvas" width="290" height="200"></canvas>
+      <div>
+          <button class="btn" title="Clear signature" onclick="clear_canvas()">X</button>
+          <button class="btn" onclick="save_signature()">Save signature</button>
+      </div>
+    </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script src="signature.js"></script>
+  </body>
+</html>
